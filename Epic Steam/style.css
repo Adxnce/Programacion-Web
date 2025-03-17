@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background: #555;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.left-nav { 
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+    height: auto;
+
+}
+
+.menu-btn {
+    display: none;
+}
+
+
+
+#burger-bar label i {
+    padding-left: 10px;
+    font-size: 40px;
+    cursor: pointer;
+
+}
+
+
+.menu {
+    position: absolute;
+    top: 124px;
+    left: -250px;
+    width: 200px;
+    height: 81.8vh;
+    background: #222;
+    color: white;
+    padding-top: 50px;
+    transition: 0.3s;
+}
+
+.menu li a {
+    display: block;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li h3 {
+    display: block;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul{
+    margin-top: -30px;
+
+}
+
+.menu li a:hover {
+    background: #555;
+}
+
+.menu-btn:checked ~ .menu {
+    left: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: -130px;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    font-size: 30px;
+}
+
+.main-container {
+    text-align: center;
+    padding:  0 400px 0 400px ;
+    line-height: 2;
+
+}
